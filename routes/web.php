@@ -15,4 +15,4 @@
 //     return view('welcome');
 // });
 
-Route::get('/', 'BlogComtroller@showList')->name('blogs');
+Route::get('/', 'BlogController@showList')->name('blogs');
