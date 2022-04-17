@@ -9,6 +9,10 @@ class BlogController extends Controller
 {
     // ブログ一覧を表示
     public function showList() {
-        return view('blog.list');
+        $blogs = Blog::all();
+
+        // dd($blogs);
+
+        return view('blog.list', ['blogs' => $blogs]);
     }
 }
