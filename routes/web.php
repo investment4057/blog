@@ -12,4 +12,7 @@
 */
 
 Route::get('/', 'BlogController@showList')->name('blogs');
+Route::get('/blog/create', 'BlogController@showCreate')->name('create');
+// ストアをexe(cute)実行する
+Route::post('/blog/store', 'BlogController@exeStore')->name('store');
 Route::get('/blog/{id}', 'BlogController@showDetail')->name('show');
